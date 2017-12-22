@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiNetCore", "ApiNetCore\Ap
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ApiJS", "ApiJS\ApiJS.njsproj", "{9CEF07E9-964E-4BA0-A131-F84322BDF460}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ApiGo", "ApiGo\ApiGo.njsproj", "{9958D173-DDA2-4517-B200-4FCDD76C321E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9CEF07E9-964E-4BA0-A131-F84322BDF460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CEF07E9-964E-4BA0-A131-F84322BDF460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CEF07E9-964E-4BA0-A131-F84322BDF460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9958D173-DDA2-4517-B200-4FCDD76C321E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9958D173-DDA2-4517-B200-4FCDD76C321E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9958D173-DDA2-4517-B200-4FCDD76C321E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9958D173-DDA2-4517-B200-4FCDD76C321E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

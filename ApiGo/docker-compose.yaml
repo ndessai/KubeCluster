@@ -1,0 +1,8 @@
+﻿version: '3'
+services:
+  apijs:
+    build: .
+    image: apigo
+    container_name: apigo
+    ports:
+        - "8082:8084"
