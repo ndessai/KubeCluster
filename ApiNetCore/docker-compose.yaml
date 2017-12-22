@@ -1,0 +1,16 @@
+﻿version: '3'
+services:
+  apinetcore-back:
+    image: redis
+    container_name: apinetcore-back
+    ports:
+        - "6379:6379"
+
+  apinetcore:
+    build: .
+    image: apinetcore
+    container_name: apinetcore
+    environment:
+      REDIS: apinetcore-back
+    ports:
+        - "8080:80"
