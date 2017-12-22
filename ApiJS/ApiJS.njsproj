@@ -28,7 +28,16 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="dockerfile">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="server.js" />
+    <Content Include="apijs.yaml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="docker-compose.yaml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>

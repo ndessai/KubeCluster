@@ -1,0 +1,39 @@
+﻿apiVersion: apps/v1beta1
+kind: Deployment
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: apijs
+spec:
+  replicas: 3
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5 
+  template:
+    metadata:
+      labels:
+        app: apijs
+    spec:
+      containers:
+      - name: apijs
+        image: ndcontainerregistry.azurecr.io/apijs:redis-v1
+        ports:
+        - containerPort: 1337
+        resources:
+          requests:
+            cpu: 250m
+          limits:
+            cpu: 500m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apijs
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 1337
+  selector:
+    app: apijs
