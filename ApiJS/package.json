@@ -1,0 +1,9 @@
+{
+  "name": "api-js",
+  "version": "0.0.0",
+  "description": "ApiJS",
+  "main": "server.js",
+  "author": {
+    "name": "ndess"
+  }
+}
